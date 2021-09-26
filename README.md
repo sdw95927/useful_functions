@@ -1,2 +1,2 @@
-# useful_functions
+# Useful functions
 Useful functions in daily life
