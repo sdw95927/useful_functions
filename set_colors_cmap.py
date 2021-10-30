@@ -61,7 +61,20 @@ for _ in range(len(slide_ids)):
     norm = mpl.colors.Normalize(vmin=vmin, vmax=vmax)
 
     cmap = cm.jet
+    
+    # Or customize
+    
+    cmap = matplotlib.colors.LinearSegmentedColormap('mycmap_yellow', 
+                                              segmentdata={'red':   [(0.0,  1.0, 1.0),
+                                                               (1.0,  1.0, 1.0)],
 
+                                                         'green': [(0.0,  1.0, 1.0),
+                                                                   (1.0,  215/255., 1.0)],
+
+                                                         'blue':  [(0.0,  1.0, 1.0),
+                                                                   (0.75,  0.7, 0.7),
+                                                                   (1.0,  0.0, 0.0)]})
+    
     m = cm.ScalarMappable(norm=norm, cmap=cmap)
 
     _mycolor = m.to_rgba(_image_feature)
