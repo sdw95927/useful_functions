@@ -30,6 +30,21 @@ plt.title("Category map")
 
 plt.show()
 
+################### Categorical cmap v2 ##############
+
+import matplotlib as mpl
+import matplotlib.cm as cm
+from matplotlib.colors import ListedColormap
+
+norm = mpl.colors.Normalize(vmin=0, vmax=3)
+cmap = cm.plasma
+m = cm.ScalarMappable(norm=norm, cmap=cmap)
+colors = []
+for i in range(4):
+    colors.append(m.to_rgba(i))
+colors.append([0.7, 0.7, 0.7, 1])
+mycmap = ListedColormap(colors)
+
 
 
 ################ 2) Continuous cmap ################
