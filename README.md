@@ -6,3 +6,4 @@ Useful functions in daily life
 * [Set colors with cmap](https://github.com/sdw95927/useful_functions/blob/main/set_colors_cmap.py)
 * [Plot colorbar](https://github.com/sdw95927/useful_functions/blob/main/plot_colorbar.py)
 * [Seaborn clustermap](https://github.com/sdw95927/useful_functions/blob/main/sns_clustermap.py)
+* [Phenograph and UMAP](https://github.com/sdw95927/useful_functions/blob/main/phenograph.py)
