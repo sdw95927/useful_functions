@@ -1,34 +1,33 @@
- ################## 1) Categorical cmap ###############
+ ################## 1) Categorical cmap v1 ###############
+ 
+import matplotlib as mpl
+import matplotlib.cm as cm
+from matplotlib.colors import ListedColormap
 
+cmap = cm.Set2
+colors = []
+for i in range(N_CLASSES-1):
+    colors.append(cmap(i))
+colors.append([0.7, 0.7, 0.7, 1])
+mycmap = ListedColormap(colors)
+
+'''
 plt.figure(figsize=(10, 6))
-
 mycmap = plt.get_cmap("Set2")
-
 mycmap.N = N_CLASSES
-
 mycmap.colors = [mycmap.colors[_] for _ in range(N_CLASSES)]
-
 plt.imshow(pred_class, cmap=mycmap, vmin=0, vmax=N_CLASSES-1)
-
 # plt.axis('off')
-
 plt.gca().set_xticks([])
-
 plt.gca().set_yticks([])
-
 cbar = plt.colorbar()
-
 cbar.ax.get_yaxis().set_ticks([])
-
 ys = [(N_CLASSES-1)/N_CLASSES * (i + 0.5) for i in range(N_CLASSES)]
-
 for i, category in enumerate(list(CLASSES_NAMES)):
-
     cbar.ax.text(10, ys[i], category, ha='left', va='center')
-
 plt.title("Category map")
-
 plt.show()
+'''
 
 ################### Categorical cmap v2 ##############
 
