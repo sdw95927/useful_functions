@@ -1,6 +1,6 @@
 import phenograph
 import seaborn as sns
-import umap
+import umap.umap_ as umap  # instead of import umap in the old version; to install: pip install umap-learn
 
 k = 50  # choose k nearest neighbors
 communities, graph, Q = phenograph.cluster(features_np, k=k) # run PhenoGraph
