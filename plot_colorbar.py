@@ -15,7 +15,7 @@ from matplotlib.colorbar import ColorbarBase
 fig, ax = plt.subplots(1, 1, figsize=(8, 8))
 plt.imshow(image)
 ax2 = fig.add_axes([0.95, 0.1, 0.03, 0.8])
-bounds = np.linspace(0, vmax, 20)
+bounds = np.linspace(vmin, vmax, 20)
 cb = ColorbarBase(ax2, cmap=cmap, norm=norm,
     spacing='proportional', ticks=bounds, boundaries=bounds, format='%.2f')
 
