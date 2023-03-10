@@ -6,7 +6,7 @@ Useful functions in daily life
 * [Set colors with cmap](https://github.com/sdw95927/useful_functions/blob/main/set_colors_cmap.py)
 * [Plot colorbar](https://github.com/sdw95927/useful_functions/blob/main/plot_colorbar.py)
 * [Seaborn clustermap](https://github.com/sdw95927/useful_functions/blob/main/sns_clustermap.py)
-* [Phenograph and UMAP](https://github.com/sdw95927/useful_functions/blob/main/phenograph.py)
+* [Phenograph and UMAP (with legend out of box)](https://github.com/sdw95927/useful_functions/blob/main/phenograph.py)
 * [Scatter plot, boxplot, violioplot, and errorbar together](https://github.com/sdw95927/useful_functions/blob/main/scatterplot_with_boxplot.py)
 
 ### Mathematical symbols
