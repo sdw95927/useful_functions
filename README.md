@@ -17,10 +17,15 @@ https://dept.math.lsa.umich.edu/~kesmith/295handout1-2010.pdf
 #### When your R package is not available
 
 Visit https://cran.r-project.org/src/contrib/Archive/.
+
 Find the package you want to install with Ctrl + F
+
 Click the package name
+
 Determine which version you want to install
+
 Open RStudio
+
 Type "install.packages("https://cran.r-project.org/src/contrib/Archive/[NAME OF PACKAGE]/[VERSION NUMBER].tar.gz", repos = NULL, type="source")"
 
 https://stackoverflow.com/questions/25721884/how-should-i-deal-with-package-xxx-is-not-available-for-r-version-x-y-z-wa
