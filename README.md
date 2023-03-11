@@ -9,6 +9,14 @@ Useful functions in daily life
 * [Phenograph and UMAP (with legend out of box)](https://github.com/sdw95927/useful_functions/blob/main/phenograph.py)
 * [Scatter plot, boxplot, violioplot, and errorbar together](https://github.com/sdw95927/useful_functions/blob/main/scatterplot_with_boxplot.py)
 
+#### Config conda env to make it available in jupyter
+```
+conda install ipykernel
+python -m ipykernel install --user --name=mask_rcnn_torch
+```
+https://medium.com/@nrk25693/how-to-add-your-conda-environment-to-your-jupyter-notebook-in-just-4-steps-abeab8b8d084
+
+
 ### Mathematical symbols
 https://dept.math.lsa.umich.edu/~kesmith/295handout1-2010.pdf
 
@@ -26,6 +34,8 @@ Determine which version you want to install
 
 Open RStudio
 
-Type "install.packages("https://cran.r-project.org/src/contrib/Archive/[NAME OF PACKAGE]/[VERSION NUMBER].tar.gz", repos = NULL, type="source")"
+```
+install.packages("https://cran.r-project.org/src/contrib/Archive/[NAME OF PACKAGE]/[VERSION NUMBER].tar.gz", repos = NULL, type="source")
+```
 
 https://stackoverflow.com/questions/25721884/how-should-i-deal-with-package-xxx-is-not-available-for-r-version-x-y-z-wa
