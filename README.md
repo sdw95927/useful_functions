@@ -16,6 +16,9 @@ python -m ipykernel install --user --name=mask_rcnn_torch
 ```
 https://medium.com/@nrk25693/how-to-add-your-conda-environment-to-your-jupyter-notebook-in-just-4-steps-abeab8b8d084
 
+#### Accelerate num checking
+![image](https://user-images.githubusercontent.com/16247996/224452772-f365b577-e563-49a6-bf7f-57b6d8945996.png)
+
 
 ### Mathematical symbols
 https://dept.math.lsa.umich.edu/~kesmith/295handout1-2010.pdf
