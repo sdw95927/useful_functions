@@ -1,0 +1,41 @@
+Windows terminal:
+
+set http_proxy=proxy.swmed.edu:3128
+set https_proxy=proxy.swmed.edu:3128
+
+Linux terminal:
+
+export http_proxy=proxy.swmed.edu:3128
+export https_proxy=proxy.swmed.edu:3128
+
+Python: (python 3)
+
+import urllib.request
+from urllib.request import urlopen
+
+proxy_support = urllib.request.ProxyHandler({'http' : 'http://proxy.swmed.edu:3128',
+                                             'https': 'http://proxy.swmed.edu:3128'})
+opener = urllib.request.build_opener(proxy_support)
+urllib.request.install_opener(opener)
+
+**********
+# for urllib3:
+import urllib3
+proxy = urllib3.ProxyManager("https://proxy.swmed.edu:3128/")
+proxy.request("GET", "https://google.com/")
+
+(python 2)
+
+from six.moves import urllib
+
+proxy_support = urllib.request.ProxyHandler({'http' : 'http://proxy.swmed.edu:3128',
+
+                                             'https': 'http://proxy.swmed.edu:3128'})
+
+opener = urllib.request.build_opener(proxy_support)
+s
+urllib.request.install_opener(opener)
+
+(R/Rstudio)
+Sys.setenv(http_proxy = "http://proxy.swmed.edu:3128")
+Sys.setenv(https_proxy = "http://proxy.swmed.edu:3128")
