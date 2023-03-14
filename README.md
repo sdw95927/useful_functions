@@ -57,6 +57,18 @@ install.packages("https://cran.r-project.org/src/contrib/Archive/[NAME OF PACKAG
 
 https://stackoverflow.com/questions/25721884/how-should-i-deal-with-package-xxx-is-not-available-for-r-version-x-y-z-wa
 
+### Change data types in R
+
+Suppose x is a data matrix or data frame, than simply
+
+```
+> class(x) <- "numeric" (or "character") 
+```
+
+would change the data type. 
+
+"as.numeric" or "as.character" only works for vector.
+
 ## Word tricks
 
 1) Insert seperator for word format: Ctrl + Alt + Enter.
