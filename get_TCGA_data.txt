@@ -1,0 +1,19 @@
+Three choices:
+
+1) http://firebrowse.org
+
+2) https://portal.gdc.cancer.gov/repository
+
+3) cbioportal
+
+It seems that data from GDC are more complete than from FireBrowse. However, somehow some files which I previously downloaded from GDC are under control now.
+
+
+TCGA barcode:
+
+https://docs.gdc.cancer.gov/Encyclopedia/pages/TCGA_Barcode/#reading-barcodes
+
+
+===================
+A tutorial: 
+https://docs.cancergenomicscloud.org/docs/quickstart
