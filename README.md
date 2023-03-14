@@ -24,13 +24,15 @@ https://medium.com/@nrk25693/how-to-add-your-conda-environment-to-your-jupyter-n
 ### Check and release GPU memory
 
 In terminal:
-
+```
 lsof /dev/nvidia-uvm
 for i in {23723..23807}; do kill -9 $i; done;
+```
 
 If not sure which is the pid you want:
-
+```
 ps (pid)  # process status command
+```
 
 ## Mathematical symbols
 https://dept.math.lsa.umich.edu/~kesmith/295handout1-2010.pdf
