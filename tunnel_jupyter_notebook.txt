@@ -1,0 +1,38 @@
+How to TUNNEL Jupyter Notebook from remote server to local browser:
+
+For windows system:
+
+Step 1) Download and install PuTTY.
+
+Step 2) Open PuTTY. In "session", input server IP (e.g., 0.0.0.0), and port (e.g., 22).
+
+Step 3) Then click "+SSH" on the left, in "TUNNEL", set source port (e.g., 8000) and destination (e.g., 8888).
+
+Step 4) Click "OPEN" to connect to the remote server.
+
+             "$cd" to the working directory.
+
+             "$jupyter notebook --no-browser --port=8888" to start jupyter notebook from terminal.
+
+Step 5) Open a browser locally, go to "http://localhost:8000".
+
+For mac system:
+
+Step 1) "$ssh username@remoteIP" to connect to remote server from Mac terminal.
+
+Step 2) "$jupyter notebook --port=8888 --no-browser" to start jupyter notebook from terminal.
+
+Step 3) In a new Mac terminal window, "$ssh -N -f -L localhost:8000:localhost:8888 username@remoteIP" to TUNNEL.
+
+Step 4) Open a browser locally, go to "http://localhost:8000".
+
+For more information, please refer to https://coderwall.com/p/ohk6cg/remote-access-to-ipython-notebooks-via-ssh​.
+
+######################################
+# Simplified version!!!
+######################################
+
+For both windows and Mac:
+Step 1) In servers terminal: $ jupyter notebook --no-browser --ip=(from ifconfig inet ip) --port=[1234] (any four digits)
+
+Step 2) In local browser, open the link shown
