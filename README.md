@@ -1,7 +1,7 @@
 # Useful functions
 Useful functions in daily life [website](https://sdw95927.github.io/useful_functions/)
 
-## =================================== Python ===================================
+## ============= Python =============
 * [BIC calculation for general clustering problems](https://github.com/sdw95927/useful_functions/blob/main/BIC_calculation_for_general_clustering.py)
 * [Set colors with cmap](https://github.com/sdw95927/useful_functions/blob/main/set_colors_cmap.py)
 * [Plot colorbar](https://github.com/sdw95927/useful_functions/blob/main/plot_colorbar.py)
@@ -19,7 +19,7 @@ https://medium.com/@nrk25693/how-to-add-your-conda-environment-to-your-jupyter-n
 ### Accelerate num checking
 ![image](https://user-images.githubusercontent.com/16247996/224452772-f365b577-e563-49a6-bf7f-57b6d8945996.png)
 
-## =================================== Bash ===================================
+## ============= Bash =============
 
 ### Check and release GPU memory
 
@@ -37,7 +37,7 @@ ps (pid)  # process status command
 ## Mathematical symbols
 https://dept.math.lsa.umich.edu/~kesmith/295handout1-2010.pdf
 
-## =================================== R ===================================
+## ============= R =============
 
 ### When your R package is not available
 
@@ -69,13 +69,13 @@ would change the data type.
 
 "as.numeric" or "as.character" only works for vector.
 
-## =================================== Word tricks ===================================
+## ============= Word tricks =============
 
 1) Insert seperator for word format: Ctrl + Alt + Enter.
 
 2) Show hidden markers (e.g., page break, section break): Ctrl + Shift + 8
 
 
-## =================================== Links ===================================
+## ============= Links =============
 
 * [Continual learning summary](https://zhuanlan.zhihu.com/p/438766442)
