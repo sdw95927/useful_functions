@@ -76,6 +76,8 @@ would change the data type.
 2) Show hidden markers (e.g., page break, section break): Ctrl + Shift + 8
 
 
-## ============= Links =============
+## ============= Reading list =============
 
 * [Continual learning summary](https://zhuanlan.zhihu.com/p/438766442)
+* Sparse expert model
+* Reinforcement learning
