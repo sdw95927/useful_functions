@@ -69,6 +69,23 @@ would change the data type.
 
 "as.numeric" or "as.character" only works for vector.
 
+## ============= c++ =============
+
+Setup environment:
+
+1) C++ -> general -> include additional dir: ($SolutionDir)external\opencv; ($SolutionDir)external\tensorRT\include
+
+2) Linker -> general -> dependency:  ($SolutionDir)external\opencv; ($SolutionDir)external\tensorRT\lib
+
+3) Link -> input -> additional dependency:
+- nvinfer.lib
+- nvinfer_plugin.lib
+- nvinfer_vc_plugin.lib
+- nvonnxparser.lib
+- nvinfer_lean.lib
+- nvinfer_dispatch.lib
+- nvparsers.lib
+
 ## ============= Word tricks =============
 
 1) Insert seperator for word format: Ctrl + Alt + Enter.
