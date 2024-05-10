@@ -31,3 +31,17 @@ ys = [(N_CLASSES-1)/N_CLASSES * (i + 0.5) for i in range(N_CLASSES)]
 for i, category in enumerate(list(CLASSES_NAMES)):
     cbar.ax.text(10, ys[i], category, ha='left', va='center')
 
+### Patch legend
+import matplotlib.patches as mpatches
+img = Image.open('iccv09Data/labels/6000124.png')
+plt.figure(figsize=(8, 6))
+im = plt.imshow(np.array(img.convert('RGB')))
+
+# create a patch (proxy artist) for every color 
+patches = [mpatches.Patch(color=np.array(palette[i])/255., 
+                          label=classes[i]) for i in range(8)]
+# put those patched as legend-handles into the legend
+plt.legend(handles=patches, bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., 
+           fontsize='large')
+
+plt.show()
