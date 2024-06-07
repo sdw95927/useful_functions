@@ -68,9 +68,9 @@ def augmentor(image, label=None):
             label = label_aug
 
         ##### OpenCV version !!!
-        image = cv2.warpPerspective(image, matrix, image.shape[:2], cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=(0,0,0))
+        image = cv2.warpPerspective(image, matrix, image.shape[:2], flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=(0,0,0))
         if label is not None:
-            label = cv2.warpPerspective(label, matrix, label.shape[:2], cv2.INTER_NEAREST, borderMode=cv2.BORDER_CONSTANT, borderValue=(255, 255, 255, 255))
+            label = cv2.warpPerspective(label, matrix, label.shape[:2], flags=cv2.INTER_NEAREST, borderMode=cv2.BORDER_CONSTANT, borderValue=(255, 255, 255, 255))
     if np.random.uniform(0, 1) < 0.5:
         # Do 50% vertical flipping
         image = image[::-1, :, :]
