@@ -92,3 +92,9 @@ for _ in range(len(slide_ids)):
     m = cm.ScalarMappable(norm=norm, cmap=cmap)
 
     _mycolor = m.to_rgba(_image_feature)
+
+
+
+#***************************************** Get colors from cmap *************************************
+from matplotlib.pyplot import cm
+colorlist = [np.array(cm.jet.resampled(n_labels)(i)[:3]) * 255 for i in range(n_labels)]
