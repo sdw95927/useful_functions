@@ -80,7 +80,7 @@ for _ in range(len(slide_ids)):
     
     cmap = matplotlib.colors.LinearSegmentedColormap('mycmap_yellow', 
                                               segmentdata={'red':   [(0.0,  1.0, 1.0),
-                                                               (1.0,  1.0, 1.0)],
+                                                                     (1.0,  1.0, 1.0)],
 
                                                          'green': [(0.0,  1.0, 1.0),
                                                                    (1.0,  215/255., 1.0)],
@@ -98,3 +98,9 @@ for _ in range(len(slide_ids)):
 #***************************************** Get colors from cmap *************************************
 from matplotlib.pyplot import cm
 colorlist = [np.array(cm.jet.resampled(n_labels)(i)[:3]) * 255 for i in range(n_labels)]
+
+# directed map value matrix to rgb
+from matplotlib.pyplot import cm
+norm = plt.Normalize(vmin=3, vmax=17)
+cmap = plt.cm.jet
+img = cmap(norm(speed_map))
