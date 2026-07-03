@@ -26,6 +26,7 @@ https://medium.com/@nrk25693/how-to-add-your-conda-environment-to-your-jupyter-n
 In terminal:
 ```
 lsof /dev/nvidia-uvm
+sudo lsof /dev/nvidia*
 for i in {23723..23807}; do kill -9 $i; done;
 ```
 
